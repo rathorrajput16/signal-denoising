@@ -37,4 +37,14 @@ CONFIG = {
     'bp_order':          4,             # Butterworth BPF order
     'wavelet':           'db6',         # Wavelet family
     'wavelet_level':     6,             # Wavelet decomposition level
+
+    # ── CNN-LISTA Deep Learning ──
+    'lista_num_atoms':          64,     # LISTA sparse code dimension
+    'lista_iterations':         3,      # Unrolled ISTA iterations
+    'lista_sparsity_penalty':   0.001,  # L1 weight on alpha
+    'lista_lr':                 1e-4,   # Adam initial learning rate (cosine decay)
+    'lista_epochs':             30,     # Max training epochs (EarlyStopping active)
+    'lista_batch_size':         512,    # Training batch size (larger = less variance)
+    'lista_dict_max_iter':      50,     # sklearn dict learning iterations
+    'lista_patches_per_signal': 2000,   # Subsample per noise-level signal
 }
