@@ -1,2 +1,4 @@
 ecg_pipeline.py
 ecg_denoising/__pycache__/
+ECG_clean_noise_data/
+nstdb_pipeline.py
