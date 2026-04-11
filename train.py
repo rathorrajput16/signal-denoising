@@ -1,18 +1,3 @@
-#!/usr/bin/env python3
-"""
-╔═══════════════════════════════════════════════════════════════╗
-║          ECG Dictionary Training Script                       ║
-║                                                               ║
-║  Trains a dictionary from MIT-BIH data, evaluates against     ║
-║  baselines, saves dictionary to disk for inference.           ║
-║                                                               ║
-║  Usage:                                                       ║
-║    python train.py                                            ║
-║    python train.py --atoms 256 --sparsity 8                   ║
-║    python train.py --no-plots                                 ║
-╚═══════════════════════════════════════════════════════════════╝
-"""
-
 import os
 import argparse
 import warnings
