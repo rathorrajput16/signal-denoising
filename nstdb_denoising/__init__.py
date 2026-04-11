@@ -44,3 +44,14 @@ from .visualization import (
     plot_all_snr_levels, plot_dictionary_atoms, plot_snr_improvement_heatmap,
     plot_spectrograms, plot_error_distributions, plot_metrics_bar, plot_all,
 )
+
+# CNN-LISTA (optional — requires TensorFlow)
+try:
+    from .lista_model import (
+        SoftThreshold, LISTADenoisingModel,
+        learn_initial_dictionary, prepare_patches_for_lista,
+        build_lista_model, denoise_signal_lista,
+        save_lista_model, load_lista_model,
+    )
+except ImportError:
+    pass  # TensorFlow not installed — LISTA unavailable
